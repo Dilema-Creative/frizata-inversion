@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<title>Redirigiendo… · Dilema Creative</title>
+<meta name="robots" content="noindex">
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; background: #FAF6EE; color: #14161A; padding: 80px 24px; text-align: center; }
+  h1 { font-size: 22px; color: #0E2A47; margin-bottom: 10px; }
+  p { color: #6B6257; max-width: 520px; margin: 0 auto 16px; line-height: 1.5; }
+  a { color: #2F7D5E; }
+  .mono { font-family: ui-monospace, monospace; font-size: 12px; word-break: break-all; }
+</style>
+<script>
+  (function(){
+    var path = window.location.pathname || '/';
+    // Strip /frizata-inversion prefix if GitHub Pages added it
+    path = path.replace(/^\/frizata-inversion\/?/, '/');
+    if (path === '' || path === '/') path = '/';
+    var target = 'https://dilema-creative.github.io/dilema-clientes' + path + window.location.search + window.location.hash;
+    window.location.replace(target);
+  })();
+</script>
+</head>
+<body>
+  <h1>Redirigiendo al nuevo dominio…</h1>
+  <p>Este contenido se mudó a <strong>dilema-clientes</strong>. Si tu navegador no redirige solo, andá a:</p>
+  <p class="mono"><a id="t" href="https://dilema-creative.github.io/dilema-clientes/">https://dilema-creative.github.io/dilema-clientes/</a></p>
+  <script>document.getElementById('t').href = 'https://dilema-creative.github.io/dilema-clientes' + window.location.pathname.replace(/^\/frizata-inversion\/?/, '/');</script>
+</body>
+</html>
