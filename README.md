@@ -1,0 +1,2 @@
+# frizata-inversion
+Redirect-only
